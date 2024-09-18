@@ -1,0 +1,13 @@
+{
+    "name": "sspsgb-post-carousel",
+    "version": "1.0.0",
+    "description": "A Gutenberg block for displaying a carousel of posts.",
+    "main": "sspsgb-post-carousel.php",
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^24.0.0"
+    }
+}
