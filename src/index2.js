@@ -53,7 +53,7 @@ const fetchAvatar = async (authorId) => {
 
 // Register block type
 wp.blocks.registerBlockType('sspsgb/post-carousel', {
-    title: __('Post Story Carousel', 'sspsgb'),
+    title: __('Post Story Carousel', sspsgb - post - story - carousel),
     icon: 'slides',
     category: 'layout',
     attributes: {
@@ -137,36 +137,36 @@ wp.blocks.registerBlockType('sspsgb/post-carousel', {
         } = attributes;
 
         const postTypeOptions = [
-            { label: __('Post', 'sspsgb'), value: 'post' },
-            { label: __('Page', 'sspsgb'), value: 'page' },
+            { label: __('Post', sspsgb - post - story - carousel), value: 'post' },
+            { label: __('Page', sspsgb - post - story - carousel), value: 'page' },
         ];
 
         return (
             <>
                 <InspectorControls>
-                    <PanelBody title={__('Post Settings', 'sspsgb')}>
+                    <PanelBody title={__('Post Settings', sspsgb - post - story - carousel)}>
                         <SelectControl
-                            label={__('Image Size', 'sspsgb')}
+                            label={__('Image Size', sspsgb - post - story - carousel)}
                             value={imageSize}
                             options={[
-                                { label: __('Thumbnail', 'sspsgb'), value: 'thumbnail' },
-                                { label: __('Medium', 'sspsgb'), value: 'medium' },
-                                { label: __('Large', 'sspsgb'), value: 'large' },
-                                { label: __('Full', 'sspsgb'), value: 'full' },
-                                { label: __('Custom', 'sspsgb'), value: 'custom' },
+                                { label: __('Thumbnail', sspsgb - post - story - carousel), value: 'thumbnail' },
+                                { label: __('Medium', sspsgb - post - story - carousel), value: 'medium' },
+                                { label: __('Large', sspsgb - post - story - carousel), value: 'large' },
+                                { label: __('Full', sspsgb - post - story - carousel), value: 'full' },
+                                { label: __('Custom', sspsgb - post - story - carousel), value: 'custom' },
                             ]}
                             onChange={(value) => setAttributes({ imageSize: value })}
                         />
                         {imageSize === 'custom' && (
                             <>
                                 <TextControl
-                                    label={__('Custom Image Width (px)', 'sspsgb')}
+                                    label={__('Custom Image Width (px)', sspsgb - post - story - carousel)}
                                     type="number"
                                     value={customImageWidth}
                                     onChange={(value) => setAttributes({ customImageWidth: parseInt(value, 10) || null })}
                                 />
                                 <TextControl
-                                    label={__('Custom Image Height (px)', 'sspsgb')}
+                                    label={__('Custom Image Height (px)', sspsgb - post - story - carousel)}
                                     type="number"
                                     value={customImageHeight}
                                     onChange={(value) => setAttributes({ customImageHeight: parseInt(value, 10) || null })}
@@ -174,126 +174,126 @@ wp.blocks.registerBlockType('sspsgb/post-carousel', {
                             </>
                         )}
                         <RangeControl
-                            label={__('Number of Posts', 'sspsgb')}
+                            label={__('Number of Posts', sspsgb - post - story - carousel)}
                             value={numberOfPosts}
                             onChange={(value) => setAttributes({ numberOfPosts: value })}
                             min={1}
                             max={20}
                         />
                         <SelectControl
-                            label={__('Post Type', 'sspsgb')}
+                            label={__('Post Type', sspsgb - post - story - carousel)}
                             value={postType}
                             options={postTypeOptions}
                             onChange={(value) => setAttributes({ postType: value })}
                         />
                         <TextControl
-                            label={__('Category ID (leave empty for all)', 'sspsgb')}
+                            label={__('Category ID (leave empty for all)', sspsgb - post - story - carousel)}
                             value={category}
                             onChange={(value) => setAttributes({ category: value })}
                         />
                     </PanelBody>
                     {/* Additional Panels for Title, Description, and Spacing */}
-                    <PanelBody title={__('Title Settings', 'sspsgb')}>
+                    <PanelBody title={__('Title Settings', sspsgb - post - story - carousel)}>
                         <RangeControl
-                            label={__('Title Font Size', 'sspsgb')}
+                            label={__('Title Font Size', sspsgb - post - story - carousel)}
                             value={fontSize}
                             onChange={(value) => setAttributes({ fontSize: value })}
                             min={10}
                             max={50}
                         />
                         <TextControl
-                            label={__('Title Font Family', 'sspsgb')}
+                            label={__('Title Font Family', sspsgb - post - story - carousel)}
                             value={fontFamily}
                             onChange={(value) => setAttributes({ fontFamily: value })}
                         />
                         <ColorPalette
-                            label={__('Title Font Color', 'sspsgb')}
+                            label={__('Title Font Color', sspsgb - post - story - carousel)}
                             colors={FONT_COLORS}
                             value={fontColor}
                             onChange={(color) => setAttributes({ fontColor: color })}
                         />
                         <RangeControl
-                            label={__('Title Line Height', 'sspsgb')}
+                            label={__('Title Line Height', sspsgb - post - story - carousel)}
                             value={lineHeight}
                             onChange={(value) => setAttributes({ lineHeight: value })}
                             min={0}
                             max={2}
                         />
                     </PanelBody>
-                    <PanelBody title={__('Description Settings', 'sspsgb')}>
+                    <PanelBody title={__('Description Settings', sspsgb - post - story - carousel)}>
                         <RangeControl
-                            label={__('Description Length', 'sspsgb')}
+                            label={__('Description Length', sspsgb - post - story - carousel)}
                             value={subtitleLength}
                             onChange={(value) => setAttributes({ subtitleLength: value })}
                             min={10}
                             max={300}
                         />
                         <RangeControl
-                            label={__('Description Font Size', 'sspsgb')}
+                            label={__('Description Font Size', sspsgb - post - story - carousel)}
                             value={descriptionFontSize}
                             onChange={(value) => setAttributes({ descriptionFontSize: value })}
                             min={10}
                             max={50}
                         />
-                        <label>{__('Description Font Color', 'sspsgb')}</label>
+                        <label>{__('Description Font Color', sspsgb - post - story - carousel)}</label>
                         <ColorPalette
                             colors={FONT_COLORS}
                             value={descriptionFontColor}
                             onChange={(color) => setAttributes({ descriptionFontColor: color })}
                         />
                     </PanelBody>
-                    <PanelBody title={__('Spacing Settings', 'sspsgb')}>
+                    <PanelBody title={__('Spacing Settings', sspsgb - post - story - carousel)}>
                         <RangeControl
-                            label={__('Padding Top (px)', 'sspsgb')}
+                            label={__('Padding Top (px)', sspsgb - post - story - carousel)}
                             value={paddingTop}
                             onChange={(value) => setAttributes({ paddingTop: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Padding Bottom (px)', 'sspsgb')}
+                            label={__('Padding Bottom (px)', sspsgb - post - story - carousel)}
                             value={paddingBottom}
                             onChange={(value) => setAttributes({ paddingBottom: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Padding Left (px)', 'sspsgb')}
+                            label={__('Padding Left (px)', sspsgb - post - story - carousel)}
                             value={paddingLeft}
                             onChange={(value) => setAttributes({ paddingLeft: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Padding Right (px)', 'sspsgb')}
+                            label={__('Padding Right (px)', sspsgb - post - story - carousel)}
                             value={paddingRight}
                             onChange={(value) => setAttributes({ paddingRight: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Margin Top (px)', 'sspsgb')}
+                            label={__('Margin Top (px)', sspsgb - post - story - carousel)}
                             value={marginTop}
                             onChange={(value) => setAttributes({ marginTop: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Margin Bottom (px)', 'sspsgb')}
+                            label={__('Margin Bottom (px)', sspsgb - post - story - carousel)}
                             value={marginBottom}
                             onChange={(value) => setAttributes({ marginBottom: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Margin Left (px)', 'sspsgb')}
+                            label={__('Margin Left (px)', sspsgb - post - story - carousel)}
                             value={marginLeft}
                             onChange={(value) => setAttributes({ marginLeft: value })}
                             min={0}
                             max={100}
                         />
                         <RangeControl
-                            label={__('Margin Right (px)', 'sspsgb')}
+                            label={__('Margin Right (px)', sspsgb - post - story - carousel)}
                             value={marginRight}
                             onChange={(value) => setAttributes({ marginRight: value })}
                             min={0}
