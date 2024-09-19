@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Post Story Carousel Gutenberg Block
+ * Plugin Name: Post Story Carousel Block
  * Description: A Gutenberg block that displays a carousel of posts as story cards.
  * Version: 1.0
  * Author: Soyeb Salar

@@ -1,9 +1,9 @@
-=== Post Story Carousel Gutenberg Block ===
+=== Post Story Carousel Block ===
 Contributors: soyebsalar
 Donate link: https://soyebsalar.in/donate/
 Tags: gutenberg, carousel, posts, block, story
 Requires at least: 5.0
-Tested up to: 6.3
+Tested up to: 6.6
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ A Gutenberg block that displays a carousel of posts as story cards, allowing cus
 
 == Description ==
 
-The **Post Story Carousel Gutenberg Block** plugin allows you to display a carousel of posts similar to social media "stories." Each post is shown as a story card with a featured image, title, subtitle, and author avatar, with customizable settings for layout, font styles, spacing, and more.
+The **Post Story Carousel Block** plugin allows you to display a carousel of posts similar to social media "stories." Each post is shown as a story card with a featured image, title, subtitle, and author avatar, with customizable settings for layout, font styles, spacing, and more.
 
 **Key Features:**
 
@@ -27,7 +27,7 @@ The **Post Story Carousel Gutenberg Block** plugin allows you to display a carou
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/post-story-carousel-gutenberg-block` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Use the block editor to add the "Post Story Carousel" block to your posts or pages.
 
@@ -62,7 +62,7 @@ If a post lacks a featured image, the plugin will display a default image from t
 == Upgrade Notice ==
 
 = 1.0 =
-Initial release of the Post Story Carousel Gutenberg Block plugin.
+Initial release of the Post Story Carousel Block plugin.
 
 == License ==
 

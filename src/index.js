@@ -221,7 +221,7 @@ wp.blocks.registerBlockType('sspsgb/post-carousel', {
                             onChange={(value) => setAttributes({ postType: value })}
                         />
                         <TextControl
-                            label={__('Category ID (leave empty for all)', 'sspsgb-post-story-carousel')}
+                            label={__('Category Name (Add Comma sapreated with name or leave empty for all)', 'sspsgb-post-story-carousel')}
                             value={category}
                             onChange={(value) => setAttributes({ category: value })}
                         />
